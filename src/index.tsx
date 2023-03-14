@@ -1,13 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
+import Welcome from './Welcome';
 
-const App = () => {
-    return (
-        <div>
-            <h1>Hello World!</h1>
-        </div>
-    );
-};
+const rootElement = document.getElementById('root') as Element;
 
-const root = document.getElementById('root');
-ReactDOM.render(<App />, root);
+if (rootElement) {
+    const root = createRoot(rootElement);
+    root.render(<Welcome />);
+} else {
+    throw new Error('No root element found');
+    //eslint-disable-next-line no-console
+    console.error('No root element found');
+}
