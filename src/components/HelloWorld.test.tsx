@@ -4,7 +4,7 @@ import { HelloWorld } from './HelloWorld';
 
 const renderHelloWorld = () => render(<HelloWorld />);
 
-describe('Welcome', () => {
+describe('Hello World', () => {
     it('renders the welcome message', () => {
         renderHelloWorld();
         expect(screen.getByText('Hello World!')).toBeInTheDocument();
