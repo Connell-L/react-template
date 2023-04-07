@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HelloWorld } from './components/HelloWorld';
 
 const App = () => {
-    return (
-        <div>
-            <h1>Hello World!</h1>
-        </div>
-    );
+    return <HelloWorld />;
 };
 
 const root = document.getElementById('root');

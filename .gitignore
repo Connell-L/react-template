@@ -4,5 +4,4 @@ node_modules
 coverage
 public/js
 .env
-test-reports/junit.xml
-pnpm-lock.yaml
+test-results
